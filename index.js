@@ -21,10 +21,14 @@ const temp = md5("sdjfho323lkg345")
 
 const userRoute = require('./routes/Users');
 const quantumsRoute = require('./routes/Quantums')
+const paperRoute = require('./routes/Papers')
 
 app.use('/users', userRoute)
 
 app.use('/quantums', quantumsRoute)
+
+app.use('/papers', paperRoute)
+
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
